@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.List;
 
 import data.DataLoader;
+import data.tools;
 import objects.Animal;
 import objects.Player;
 import objects.Score;
@@ -14,9 +15,6 @@ public class Main {
 
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		List<Animal> animalList = DataLoader.loadAnimalData();
-		List<Score> scoreList = DataLoader.loadScoreData();
 		System.out.println("Willkommen zum Tier-Quiz!");
 		Player player = helloPlayer();
 		Boolean willContinue = true;
@@ -31,7 +29,7 @@ public class Main {
 		try {
 			String input = in.readLine();
 			System.out.println("Bist du zufrieden mit dem Namen " + input + "?");
-			if(accept()==true) {
+			if(tools.accept()==true) {
 				Player player  = new Player(input);
 				return player;
 			}else {
@@ -44,19 +42,7 @@ public class Main {
 		return new Player("Niemand");
 	}
 
-	public static boolean accept() throws IOException {
-		System.out.println("Antworte mit 'j' 'ja' oder 'n' 'nein'!");
-		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		String input = in.readLine();
-		if(input.equals("j") || input.equals("ja")) {
-			return true;
-		}
-		if(input.equals("n") || input.equals("nein")) {
-			return false;
-		}
-		System.out.println("Wir konnten leider nicht verstehen was du tun möchtest, versuche es nochmal!");
-		return accept();
-	}
+
 
 	public static boolean programStart(Player player) {
 		Page page;
