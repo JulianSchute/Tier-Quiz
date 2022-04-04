@@ -1,0 +1,5 @@
+package quiz;
+
+public enum GameType {
+	ANIMALMATCHING, ANIMALQUIZ, SMALLERBIGGER, WHICHANIMALISIT
+}

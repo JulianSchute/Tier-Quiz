@@ -1,0 +1,13 @@
+Malaysia-Tiger;Panthera tigris jacksoni;Katzen (Felidae);Katzenartige (Feliformia);18;275;190000;250;Malaiischen Halbinsel, Thailand
+Asiatischer Elefant;Elephas maximus;Elefanten (Elephantidae);Rüsseltiere (Proboscidea);60;640;6000000;32750;Südasien, Südostasien, Malaiischen Inseln 
+Feldmaus;Microtus arvalis;Wähler (Cricetidae);Mäuseartige (Muroidea);3;16;40;0;Von Spanien bis zur Mongolei
+Vampirfledermäuse;Desmodontinae;Blattnasen (Phyllostomidae);Fledertiere (Chiroptera);20;40;50;0;südliche USA bis südliche Südamerika
+Alpaka;Vicugna pacos;Kamele (Camelidae);Paarhufer (Artiodactyla);20;100;65000;3500000;Südamerika
+Eisbär;Ursus maritimus;Bären (Ursidae);Raubtiere (Carnivora);30;250;500000;25000;Nordpol
+Polarfuchs;Vulpes lagopus;Hunde (Canidae);Raubtiere (Carnivora);15;90;5000;600000;Nordeuropa,Nordamerika,Nordrussland,Grönland
+Hase;Leporidae;Hasen;Hasenartige (Lagomorpha);10;70;7000;0;Überall durch Menschliche Verbreitung
+Giraffe;Giraffa;Giraffenartige (Giraffidae);Paarhufer (Artiodactyla);30;580;1000000;117000;Afrika
+Löwe;Panthera leo;Katzen (Felidae);Raubtiere (Carnivora);15;250;250000;32000;Afrika, Indien
+Komodowaran;Varanus komodoensis;Varaniadae;Schleichenartige (Anguimorpha);30;300;42000;8000;Indonesien
+Tafelente;Aythya ferina;Entenvögel (Anatidae);Gänsevögel (Anseriformes);11;46;1100;100000;Gesamter europäischer Kontinent, Brutgebiete in Afrika
+Wolf;Canis lupus;Hunde (Canidae);Raubtiere (Carnivora);13;160;78000;170000;Nordamerika,Europa,Asien
