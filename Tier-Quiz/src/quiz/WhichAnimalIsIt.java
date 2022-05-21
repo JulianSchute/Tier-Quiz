@@ -20,6 +20,9 @@ public class WhichAnimalIsIt extends Game {
 	private int attributesPerRound = 6;
 	private List<Animal> chosenAnimals =new ArrayList<Animal>();
 
+	public List<Animal> getChosenAnimals() {
+		return chosenAnimals;
+	}
 	public WhichAnimalIsIt() {
 		this.setType(GameType.WHICHANIMALISIT);
 		this.generateGame();

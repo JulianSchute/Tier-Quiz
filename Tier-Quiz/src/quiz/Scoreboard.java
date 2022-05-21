@@ -53,7 +53,7 @@ public class Scoreboard extends Page {
 		try {
 			input = in.readLine();
 			System.out.println(input);
-			return recursiveChoiceHandler(input);
+			return choiceHandler.recursiveScoreChoiceHandler(input);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -79,34 +79,5 @@ public class Scoreboard extends Page {
 
 
 
-	public static GameType recursiveChoiceHandler(String input) {
-		GameType game = null;
-		if(input.equals("1") || input.equals("AnimalMatching")) {
-			game = GameType.ANIMALMATCHING;
-			return game;
-		}
-		if(input.equals("2") || input.equals("AnimalQuiz")) {
-			game = GameType.ANIMALQUIZ;
-			return game;
-		}
-		if(input.equals("3") || input.equals("SmallerBigger")) {
-			game = GameType.SMALLERBIGGER;
-			return game;
-		}
-		if(input.equals("4") || input.equals("WhichAnimalIsIt")) {
-			game = GameType.WHICHANIMALISIT;
-			return game;		
-		}
-		System.out.println("Wir konnten leider nicht verstehen was du tun möchtest, versuche es nochmal!");
-		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		try {
-			input = in.readLine();
-			System.out.println(input);
-			return recursiveChoiceHandler(input);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return game;		
-	}
+	
 }

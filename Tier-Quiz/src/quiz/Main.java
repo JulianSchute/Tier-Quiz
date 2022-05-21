@@ -53,7 +53,7 @@ public class Main {
 		try {
 			String input = in.readLine();
 			System.out.println(input);			
-			page = recursiveChoiceHandler(input);
+			page = choiceHandler.recursiveGameChoiceHandler(input);
 			System.out.println(page.witchPageIsIt());
 			page.startPage(player);
 			return page.closePage(player);
@@ -64,50 +64,6 @@ public class Main {
 		return true;
 	}
 
-	//recursive solution for wrong inputs
-	public static Page recursiveChoiceHandler(String input) {
-		Page page;
-		if(input.equals("1") || input.equals("AnimalMatching")) {
-			page = new AnimalMatching();
-			return page;
-		}
-		if(input.equals("2") || input.equals("AnimalQuiz")) {
-			page = new AnimalQuiz();
-			return page;
-		}
-		if(input.equals("3") || input.equals("SmallerBigger")) {
-			page = new SmallerBigger();
-			return page;
-		}
-		if(input.equals("4") || input.equals("WhichAnimalIsIt")) {
-			page = new WhichAnimalIsIt();
-			return page;		
-		}
-		if(input.equals("D") || input.equals("AnimalDesigner")) {
-			page = new AnimalDesigner();
-			return page;	
-		}
-		if(input.equals("S") || input.equals("Scoreboard") ) {
-			page = new Scoreboard();
-			return page;
-		}
-		if(input.equals("E") || input.equals("Exit") ) {
-			page = new Exit();
-			return page;
-		}
 
-		System.out.println("Wir konnten leider nicht verstehen was du tun möchtest, versuche es nochmal!");
-		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-		try {
-			input = in.readLine();
-			System.out.println(input);
-			return recursiveChoiceHandler(input);
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		page = new AnimalQuiz();
-		return page;
-	}
 
 }
