@@ -54,7 +54,7 @@ public class Main {
 			String input = in.readLine();
 			System.out.println(input);			
 			page = recursiveChoiceHandler(input);
-			page.witchPageIsIt();
+			System.out.println(page.witchPageIsIt());
 			page.startPage(player);
 			return page.closePage(player);
 		} catch (IOException e) {

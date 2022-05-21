@@ -8,7 +8,7 @@ public abstract class Page {
 
 	public abstract void startPage(Player player); 
 
-	public abstract void witchPageIsIt();
+	public abstract String witchPageIsIt();
 
 	public  boolean closePage(Player player) {
 		Page page = new Exit();

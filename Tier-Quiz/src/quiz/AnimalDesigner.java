@@ -50,8 +50,8 @@ public class AnimalDesigner extends Page {
 
 
 	@Override
-	public void witchPageIsIt() {
-		System.out.println("Du hast AnimalDesigner ausgewählt");
+	public String witchPageIsIt() {
+		return "Du hast AnimalDesigner ausgewählt";
 
 	}
 

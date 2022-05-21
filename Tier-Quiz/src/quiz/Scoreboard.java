@@ -19,8 +19,8 @@ public class Scoreboard extends Page {
 	}
 
 	@Override
-	public void witchPageIsIt() {
-		System.out.println("Du hast Scoreboard ausgewählt");
+	public String witchPageIsIt() {
+		return "Du hast Scoreboard ausgewählt";
 
 	}
 

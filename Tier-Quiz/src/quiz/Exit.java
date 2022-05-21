@@ -25,8 +25,8 @@ public class Exit extends Page {
 	}
 	
 	@Override
-	public void witchPageIsIt() {
-		System.out.println("Du hast Exit ausgewählt");		
+	public String witchPageIsIt() {
+		return "Du hast Exit ausgewählt";		
 	}
 
 	@Override

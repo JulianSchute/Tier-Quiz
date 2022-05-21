@@ -1,0 +1,10 @@
+Von welchem Tier ist der Wissenschaftliche Name 'Panthera leo'?;Löwe;Katze;Tiger;Panther;Hase;Fuchs;Leopard
+Welches typische Haustier ist in Deutschland am weitesten verbreitet?;Katze;Aquarien;Hunde;Kleintiere;Ziervögel;Gartenteiche;Aquarien
+Wie alt wird ein Tiger in Freiheit?;20-25 Jahre;2-4 Jahre;5-7 Jahre;60-85 Jahre;10-16 Jahre;19-21 Jahre;6-8 Jahre
+Von welchem Kontinet stammt der Waschbär?;Nordamerika;Antarktika;Südamerika;Europa;Australien;Asien;Afrika
+Wie alt wird ein Elefant in Freiheit?;60-65 Jahre;15-20 Jahre;5-7 Jahre;80-89 Jahre;40-50 Jahre;19-24 Jahre;35-40 Jahre
+Wie alt wird ein Zwerghamster in Freiheit?;1,5-2 Jahre;15-20 Jahre;5-7 Jahre;1-1,5 Jahre;3-4,5 Jahre;2-2,5 Jahre;11-12,5 Jahre
+Auf welche Kontineten lebten wilde Löwe?;Afrika, Eurasien;Antarktika, Afrika;Südamerika, Afrika;Europa, Nordamrika;Australien, Afrika, Südamerika;Asien, Australien;Afrika, Australien
+Das Baby welches Tiers nennt man auch 'Welpe'?;Wolf;Katze;Seehund;Maus;Leopard;Elefant;Dachs
+Das Baby welches Tiers nennt man auch 'Heuler'?;Seehund;Katze;Hund;Maus;Leopard;Elefant;Schaf
+Das Baby welches Tiers nennt man auch 'Lamm'?;Schaf;Katze;Hund;Nashorn;Kuh;Hase;Dachs

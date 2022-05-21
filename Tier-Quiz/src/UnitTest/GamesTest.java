@@ -9,6 +9,8 @@ import org.junit.jupiter.api.Test;
 
 import data.DataLoader;
 import objects.Animal;
+import quiz.AnimalMatching;
+import quiz.Page;
 
 class GamesTest {
 
@@ -19,6 +21,12 @@ class GamesTest {
 		List<Animal> testAnimals = new ArrayList<Animal>();
 		testAnimals.add(new Animal("Malaysia-Tiger","Panthera tigris jacksoni","Katzen (Felidae)","Katzenartige (Feliformia)",18,275,190000,250,"Malaiischen Halbinsel, Thailand"));
 		assertEquals("Malysia-Tiger", animals.get(0).getName());
+	}
+	
+	@Test
+	void choseGameTest() {
+		Page page = new AnimalMatching();
+		assertEquals("Du hast AnimalMatching ausgewählt",page.witchPageIsIt());
 	}
 
 }

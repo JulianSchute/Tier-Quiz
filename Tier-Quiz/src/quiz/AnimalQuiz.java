@@ -33,8 +33,8 @@ public class AnimalQuiz extends Game {
 	}
 
 	@Override
-	public void witchPageIsIt() {
-		System.out.println("Du hast AnimalQuiz ausgewählt");
+	public String witchPageIsIt() {
+		return "Du hast AnimalQuiz ausgewählt";
 
 	}
 

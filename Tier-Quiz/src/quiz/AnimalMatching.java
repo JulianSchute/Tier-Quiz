@@ -52,8 +52,8 @@ public class AnimalMatching extends Game{
 	}
 
 	@Override
-	public void witchPageIsIt() {
-		System.out.println("Du hast AnimalMatching ausgewählt");
+	public String witchPageIsIt() {
+		return "Du hast AnimalMatching ausgewählt";
 
 	}
 

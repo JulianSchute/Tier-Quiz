@@ -41,8 +41,8 @@ public class SmallerBigger extends Game{
 	}
 
 	@Override
-	public void witchPageIsIt() {
-		System.out.println("Du hast SmallerBigger ausgewählt");
+	public String witchPageIsIt() {
+		return "Du hast SmallerBigger ausgewählt";
 
 	}
 
