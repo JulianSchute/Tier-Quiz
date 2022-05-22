@@ -72,7 +72,7 @@ public class AnimalMatching extends Game{
 			while( correct == false) {
 				int number =(int) (Math.random()*8);
 				System.out.println("Zahl: " + number);
-				if(i == 0 && xCorrectAnimalAvailable(number)) {				
+				if(i == 0 && xCorrectAnimalAvailable(number, availableAnimals, animalsPerGame)) {				
 					intRounds[i] = number;
 					correct = true;
 				}else {
@@ -82,7 +82,7 @@ public class AnimalMatching extends Game{
 							included = true;
 						}
 					}
-					if(!included && xCorrectAnimalAvailable(number)) {										
+					if(!included && xCorrectAnimalAvailable(number, availableAnimals, animalsPerGame)) {										
 						correct = true;
 						intRounds[i] = number;
 					}
@@ -94,18 +94,18 @@ public class AnimalMatching extends Game{
 		}
 	}
 	//We can only choose categories with X unique answers
-	private boolean xCorrectAnimalAvailable(int attribute) {
+	public boolean xCorrectAnimalAvailable(int attribute, List<Animal> availableAnimal, int animalsPerGame ) {
 		int count = 0;
 		//scientificName
 		if(attribute == 0) {
 			List<String> list = new ArrayList<String>();
-			for(int i =0; i<availableAnimals.size();i++) {
+			for(int i =0; i<availableAnimal.size();i++) {
 				if(i == 0) {
-					list.add(availableAnimals.get(i).getScientificName());
+					list.add(availableAnimal.get(i).getScientificName());
 					count++;
 				}
-				if(!list.contains(availableAnimals.get(i).getScientificName())) {
-					list.add(availableAnimals.get(i).getScientificName());
+				if(!list.contains(availableAnimal.get(i).getScientificName())) {
+					list.add(availableAnimal.get(i).getScientificName());
 					count++;
 				}			
 				if(list.size()>=animalsPerGame) {
@@ -118,13 +118,13 @@ public class AnimalMatching extends Game{
 		//Family
 		if(attribute == 1) {
 			List<String> list = new ArrayList<String>();
-			for(int i =0; i<availableAnimals.size();i++) {
+			for(int i =0; i<availableAnimal.size();i++) {
 				if(i == 0) {
-					list.add(availableAnimals.get(i).getFamily());
+					list.add(availableAnimal.get(i).getFamily());
 					count++;
 				}
-				if(!list.contains(availableAnimals.get(i).getFamily())) {
-					list.add(availableAnimals.get(i).getFamily());
+				if(!list.contains(availableAnimal.get(i).getFamily())) {
+					list.add(availableAnimal.get(i).getFamily());
 					count++;
 				}			
 				if(list.size()>=animalsPerGame) {
@@ -137,13 +137,13 @@ public class AnimalMatching extends Game{
 		//Order
 		if(attribute == 2) {
 			List<String> list = new ArrayList<String>();
-			for(int i =0; i<availableAnimals.size();i++) {
+			for(int i =0; i<availableAnimal.size();i++) {
 				if(i == 0) {
-					list.add(availableAnimals.get(i).getOrder());
+					list.add(availableAnimal.get(i).getOrder());
 					count++;
 				}
-				if(!list.contains(availableAnimals.get(i).getOrder())) {
-					list.add(availableAnimals.get(i).getOrder());
+				if(!list.contains(availableAnimal.get(i).getOrder())) {
+					list.add(availableAnimal.get(i).getOrder());
 					count++;
 				}			
 				if(list.size()>=animalsPerGame) {
@@ -156,13 +156,13 @@ public class AnimalMatching extends Game{
 		//LifeExpectancy
 		if(attribute == 3) {
 			List<Integer> list = new ArrayList<Integer>();
-			for(int i =0; i<availableAnimals.size();i++) {
+			for(int i =0; i<availableAnimal.size();i++) {
 				if(i == 0) {
-					list.add(availableAnimals.get(i).getLifeExpectancy());
+					list.add(availableAnimal.get(i).getLifeExpectancy());
 					count++;
 				}
-				if(!list.contains(availableAnimals.get(i).getLifeExpectancy())) {
-					list.add(availableAnimals.get(i).getLifeExpectancy());
+				if(!list.contains(availableAnimal.get(i).getLifeExpectancy())) {
+					list.add(availableAnimal.get(i).getLifeExpectancy());
 					count++;
 				}			
 				if(list.size()>=animalsPerGame) {
@@ -175,13 +175,13 @@ public class AnimalMatching extends Game{
 		//size
 		if(attribute == 4) {
 			List<Integer> list = new ArrayList<Integer>();
-			for(int i =0; i<availableAnimals.size();i++) {
+			for(int i =0; i<availableAnimal.size();i++) {
 				if(i == 0) {
-					list.add(availableAnimals.get(i).getSize());
+					list.add(availableAnimal.get(i).getSize());
 					count++;
 				}
-				if(!list.contains(availableAnimals.get(i).getSize())) {
-					list.add(availableAnimals.get(i).getSize());
+				if(!list.contains(availableAnimal.get(i).getSize())) {
+					list.add(availableAnimal.get(i).getSize());
 					count++;
 				}			
 				if(list.size()>=animalsPerGame) {
@@ -194,13 +194,13 @@ public class AnimalMatching extends Game{
 		//weight
 		if(attribute == 5) {
 			List<Integer> list = new ArrayList<Integer>();
-			for(int i =0; i<availableAnimals.size();i++) {
+			for(int i =0; i<availableAnimal.size();i++) {
 				if(i == 0) {
-					list.add(availableAnimals.get(i).getWeight());
+					list.add(availableAnimal.get(i).getWeight());
 					count++;
 				}
-				if(!list.contains(availableAnimals.get(i).getWeight())) {
-					list.add(availableAnimals.get(i).getWeight());
+				if(!list.contains(availableAnimal.get(i).getWeight())) {
+					list.add(availableAnimal.get(i).getWeight());
 					count++;
 				}			
 				if(list.size()>=animalsPerGame) {
@@ -213,13 +213,13 @@ public class AnimalMatching extends Game{
 		//population
 		if(attribute == 6) {
 			List<Integer> list = new ArrayList<Integer>();
-			for(int i =0; i<availableAnimals.size();i++) {
-				if(i == 0 && availableAnimals.get(i).getPopulation() != 0) {
-					list.add(availableAnimals.get(i).getPopulation());
+			for(int i =0; i<availableAnimal.size();i++) {
+				if(i == 0 && availableAnimal.get(i).getPopulation() != 0) {
+					list.add(availableAnimal.get(i).getPopulation());
 					count++;
 				}
-				if((!list.contains(availableAnimals.get(i).getPopulation())&& availableAnimals.get(i).getPopulation() != 0)) {
-					list.add(availableAnimals.get(i).getPopulation());
+				if((!list.contains(availableAnimal.get(i).getPopulation())&& availableAnimal.get(i).getPopulation() != 0)) {
+					list.add(availableAnimal.get(i).getPopulation());
 					count++;
 				}			
 				if(list.size()>=animalsPerGame) {
@@ -232,13 +232,13 @@ public class AnimalMatching extends Game{
 		//habitat
 		if(attribute == 7) {
 			List<String> list = new ArrayList<String>();
-			for(int i =0; i<availableAnimals.size();i++) {
+			for(int i =0; i<availableAnimal.size();i++) {
 				if(i == 0) {
-					list.add(availableAnimals.get(i).getHabitat());
+					list.add(availableAnimal.get(i).getHabitat());
 					count++;
 				}
-				if(!list.contains(availableAnimals.get(i).getHabitat())) {
-					list.add(availableAnimals.get(i).getHabitat());
+				if(!list.contains(availableAnimal.get(i).getHabitat())) {
+					list.add(availableAnimal.get(i).getHabitat());
 					count++;
 				}			
 				if(list.size()>=animalsPerGame) {

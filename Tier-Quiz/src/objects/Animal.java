@@ -110,7 +110,7 @@ public class Animal {
 	public String getValueIncluding(int i, int aditionalInt) {
 		String returnValue = "";
 		if(aditionalInt == 3) {
-			if(i == 0) {
+			if(i == 1) {
 				returnValue = i +" Jahr";	
 			}else {
 				returnValue = i +" Jahre";
