@@ -295,7 +295,7 @@ public class SmallerBigger extends Game{
 		errors = this.allowedErrorsPerRound;
 		while(roundDone == false) {
 			this.roundBuilder(round, pairList, correctPairList );
-			this.roundQuestion(round, pairList,correctPairList);
+			this.askRoundQuestion(round, pairList,correctPairList);
 
 			if(errors == 0) {
 				roundDone = true;
@@ -372,7 +372,7 @@ public class SmallerBigger extends Game{
 	}
 	
 	//Ask the player which animal should be placed
-	private void roundQuestion(Round round, List<ValuePair> pairList, List<ValuePair> correctPairList) {
+	private void askRoundQuestion(Round round, List<ValuePair> pairList, List<ValuePair> correctPairList) {
 		System.out.println("Wähle ein Tier welches du einordnen willst!");
 		int playerAnswerAnimal = -1;
 		int playerAnswerPosition = -1;

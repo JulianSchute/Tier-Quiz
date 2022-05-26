@@ -19,16 +19,16 @@ import quiz.choiceHandler;
 
 class GamesTest {
 
-	/*
+	
 	@Test
 	void animalLoadingTest() {
 		//Testfile
 		List<Animal> animals = DataLoader.loadAnimalData("\\Files\\An.txt");
 		List<Animal> testAnimals = new ArrayList<Animal>();
 		testAnimals.add(new Animal("Malaysia-Tiger","Panthera tigris jacksoni","Katzen (Felidae)","Katzenartige (Feliformia)",18,275,190000,250,"Malaiischen Halbinsel, Thailand"));
-		assertEquals("Malysia-Tiger", animals.get(0).getName());
+		assertEquals("Malaysia-Tiger", animals.get(0).getName());	
 	}
-	*/
+	
 	
 	//check number input
 	@Test
@@ -93,7 +93,7 @@ class GamesTest {
 	
 	//translate weight for human readability
 	@Test
-	void animalValuesWeigt() {
+	void animalValuesWeight() {
 		Animal animal = new Animal("Malaysia-Tiger","Panthera tigris jacksoni","Katzen (Felidae)","Katzenartige (Feliformia)",18,275,190000,250,"Malaiischen Halbinsel, Thailand");
 	
 		String weight0 =	animal.getValueIncluding(100,5);
