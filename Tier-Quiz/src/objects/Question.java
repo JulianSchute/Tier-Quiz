@@ -1,6 +1,6 @@
 package objects;
 
-public class Question {
+final public class Question {
 	
 	//--properties-------------------------------
 	private String question;
